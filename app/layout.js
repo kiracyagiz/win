@@ -6,6 +6,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Win',
   description: 'Win',
+  icons:{
+    icon: ['/favicon.ico?v=1']
+  }
 }
 
 export default function RootLayout({ children }) {
