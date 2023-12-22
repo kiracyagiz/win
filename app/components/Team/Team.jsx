@@ -15,7 +15,7 @@ const Team = () => {
           teamwork at our company. Our team members work synergistically,
           leveraging their diverse skills and expertise to tackle challenges and
           achieve shared goals. Through open communication and a spirit of
-          mutual respect, we create an environment where everyone's voice is
+          mutual respect, we create an environment where everyone s voice is
           heard and valued. Together, we are greater than the sum of our parts.
           We are always welcoming new partners who share the same vision as us
           in offering win-win collaboration opportunities. Together, we achieve
