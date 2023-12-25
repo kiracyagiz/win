@@ -34,7 +34,7 @@ const Contact = () => {
             
             <div className="flex flex-col gap-y-4">
             <p className="text-2xl font-semibold">GET IN TOUCH</p>
-            <p className="max-w-md">
+            <p className="max-w-md ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ex
                 vitae excepturi culpa, cum adipisci eveniet accusantium vel tenetur
                 veniam perferendis reiciendis amet quisquam, qui beatae magnam

@@ -8,9 +8,9 @@ const Team = () => {
         <p className=" text-2xl lg:text-7xl lg:max-w-xl  ">A MESSAGE FROM US</p>
         <Image src={"/team.jpg"} width={500} height={500} />
       </div>
-      <div className=" flex flex-col justify-center gap-y-20">
+      <div className=" flex flex-col justify-center gap-y-12 lg:gap-y-20">
         <p className="text-4xl text-center font-semibold">OUR TEAM</p>
-        <p className="max-w-xl text-lg">
+        <p className=" text-justify max-w-lg text-md lg:max-w-xl  lg:text-lg">
           We pride ourselves on fostering a culture of collaboration and
           teamwork at our company. Our team members work synergistically,
           leveraging their diverse skills and expertise to tackle challenges and
