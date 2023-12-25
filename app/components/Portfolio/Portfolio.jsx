@@ -47,7 +47,10 @@ const Portfolio = () => {
     </div>
     </div>
        </div>
-       <Carousel className='block md:hidden lg:hidden mx-auto text-center  p-10'>
+       <div className=" block lg:hidden text-center py-8">
+       <p className=" text-2xl text-center font-semibold">PORTFOLIO</p>
+        <p className=" text-xl mt-8 text-center font-semibold">COUNTRIES WE CONDUCT BUSINESS</p>
+               <Carousel className='block md:hidden lg:hidden mx-auto text-center  p-10'>
                 <div className=' mx-auto'>
                     <img src="/London.jpeg" height='100px' width='200px'/>
                 </div>
@@ -70,6 +73,8 @@ const Portfolio = () => {
                     <img src="/switzerland.jpg" height='100px' width='200px'/>
                 </div>
         </Carousel>
+       </div>
+
     </div>
   );
 };
