@@ -1,8 +1,15 @@
+"use client";
+
 import React from "react";
 import { IoIosMail, IoMdPhonePortrait } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("moqgabyp");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <div className=" p-12 gap-y-10 lg:p-32 flex flex-col lg:flex-row justify-between relative">
       <div>
@@ -17,28 +24,60 @@ const Contact = () => {
         </div>
         <div className="flex flex-col gap-y-10 mt-8">
           <div className="flex items-center gap-x-8">
-            <IoIosMail size={30} />
-            <p>winInfo@gmail.com</p>
-          </div>
-          <div className="flex items-center gap-x-8">
-            <IoMdPhonePortrait size={30} />
-            <p>winInfo@gmail.com</p>
-          </div>
-          <div className="flex items-center gap-x-8">
             <FaLocationDot size={30} />
-            <p>winInfo@gmail.com</p>
+            <p>Bllok, near Swiss Embassy, Tirana, Albania</p>
           </div>
         </div>
       </div>
+      <div className="w-full lg:w-1/2 bg-gray-100 shadow-lg p-8 rounded-lg">
+        <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+          <label htmlFor="email" className="text-gray-600">
+            Email Address
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            className="border border-gray-300 p-2 rounded-md focus:outline-none focus:border-primaryColor"
+          />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-      <div className=" w-full   lg:w-2/5 bg-white shadow-lg">
-        <iframe
-          className="border-2 border-black "
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1498.1820879660868!2d19.816890728215952!3d41.32269371308841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2s!4v1703502988857!5m2!1str!2s"
-          loading="lazy"
-          width="100%"
-          height="100%"
-        ></iframe>
+          <label htmlFor="name" className="text-gray-600">
+            Name
+          </label>
+          <input
+            id="name"
+            type="Name"
+            name="name"
+            className="border border-gray-300 p-2 rounded-md focus:outline-none focus:border-primaryColor"
+          />
+
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
+
+          <label htmlFor="message" className="text-gray-600">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            className="border border-gray-300 p-2 rounded-md focus:outline-none focus:border-primaryColor"
+            rows="4"
+          />
+
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className="bg-black text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue"
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
