@@ -8,16 +8,21 @@ import toast, { Toaster } from 'react-hot-toast';
 import { useRef,useEffect } from "react";
 
 const Contact = () => {
+    
   const [state, handleSubmit] = useForm("moqgabyp");
   const formRef = useRef(null);
   useEffect(() => {
     if (state.succeeded) {
       toast.success('You have successfully sent the message!');
+      formRef.current.reset(); // Reset the form values
+
     }
     if (state.errors) {
       toast.error('Error');
     }
   }, [state.succeeded, state.errors]);
+
+
  
   return (
         <div className=" p-12 gap-y-10 lg:p-32 flex flex-col lg:flex-row justify-between relative">
