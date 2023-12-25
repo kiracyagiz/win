@@ -5,16 +5,20 @@ import { IoIosMail, IoMdPhonePortrait } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { useForm, ValidationError } from "@formspree/react";
 import toast, { Toaster } from 'react-hot-toast';
-
+import { useRef,useEffect } from "react";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("moqgabyp");
-  if (state.succeeded) {
-    toast.success('You have sucessfuly send the message !')
-  }
-  else {
-    toast.error('Please try again')
-  }
+  const formRef = useRef(null);
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success('You have successfully sent the message!');
+    }
+    if (state.errors) {
+      toast.error('Error');
+    }
+  }, [state.succeeded, state.errors]);
+ 
   return (
         <div className=" p-12 gap-y-10 lg:p-32 flex flex-col lg:flex-row justify-between relative">
             <Toaster
@@ -40,7 +44,7 @@ const Contact = () => {
             </div>
         </div>
         <div className="w-full lg:w-1/2 bg-gray-100 shadow-lg p-8 rounded-lg">
-            <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+            <form onSubmit={handleSubmit} className="flex flex-col space-y-4" ref={formRef}>
             <label htmlFor="email" className="text-gray-600">
                 Email Address
             </label>
