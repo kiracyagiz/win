@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div className="bg-primaryColor flex flex-col lg:flex-row justify-center lg:px-14">
+    <div className="bg-primaryColor flex flex-col lg:flex-row justify-center lg:px-14 mt-10" id="about">
       <div className="w-4/5 mt-8 lg:mt-0 lg:w-1/2 flex flex-col justify-center gap-y-20 mx-auto">
         <p className=" text-5xl font-semibold">WHO WE ARE</p>
         <p className="max-w-lg text-md">

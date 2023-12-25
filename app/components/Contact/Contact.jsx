@@ -92,7 +92,7 @@ const Contact = () => {
             <button
                 type="submit"
                 disabled={state.submitting}
-                className="bg-black text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue"
+                className="bg-black text-white p-2 rounded-md  focus:outline-none "
             >
                 Submit
             </button>

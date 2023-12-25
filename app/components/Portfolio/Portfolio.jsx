@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 const Portfolio = () => {
   return (
-    <div>
+    <div id="portfolio">
        <div className="hidden lg:block">
        <p className=" text-4xl text-center font-semibold">PORTFOLIO</p>
         <p className=" text-2xl mt-8 text-center font-semibold">COUNTRIES WE CONDUCT BUSINESS</p>
