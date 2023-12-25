@@ -1,10 +1,14 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from 'react-responsive-carousel'
 const Portfolio = () => {
   return (
     <div>
-        <p className=" text-4xl text-center font-semibold">PORTFOLIO</p>
+       <div className="hidden lg:block">
+       <p className=" text-4xl text-center font-semibold">PORTFOLIO</p>
         <p className=" text-2xl mt-8 text-center font-semibold">COUNTRIES WE CONDUCT BUSINESS</p>
 
            <div className=" flex justify-center  p-14">
@@ -42,6 +46,30 @@ const Portfolio = () => {
       </div>
     </div>
     </div>
+       </div>
+       <Carousel className='block md:hidden lg:hidden mx-auto text-center  p-10'>
+                <div className=' mx-auto'>
+                    <img src="/London.jpeg" height='100px' width='200px'/>
+                </div>
+                <div className=' mx-auto' >
+                    <img src="/milano.jpg" height='100px' width='200px'/>
+                </div>
+                <div className=' mx-auto'>
+                    <img src="/paris.jpg" height='100px' width='200px'/>
+                </div>
+                <div className=' mx-auto'>
+                    <img src="/Greece.jpg" height='100px' width='200px'/>
+                </div>
+                <div className=' mx-auto'>
+                    <img src="/jersusalem.jpg" height='100px' width='200px'/>
+                </div>
+                <div className=' mx-auto'>
+                    <img src="/poland.jpg" height='100px' width='200px'/>
+                </div>
+                <div className=' mx-auto'>
+                    <img src="/switzerland.jpg" height='100px' width='200px'/>
+                </div>
+        </Carousel>
     </div>
   );
 };
