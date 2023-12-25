@@ -7,11 +7,11 @@ const ServiceText = ({dt,dth}) => {
 
         <div className=''>
         {dth.map((dt,i)=> (
-                  <li className=' text-lg lg:text-2xl max-w-lg   list-none'>{dt}</li>
+                  <li className=' text-lg lg:text-2xl max-w-lg   list-none' key={i}>{dt}</li>
 
         ))}
         {dt.map((dt,i)=> (
-        <li className='text-sm lg:text-md max-w-md'>{dt}</li>
+        <li className='text-sm lg:text-md max-w-md' key={i}>{dt}</li>
           
         ))}
 

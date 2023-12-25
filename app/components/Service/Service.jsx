@@ -45,7 +45,7 @@ const Service = () => {
     <p className='text-white text-2xl lg:text-8xl font-semibold'>OUR SERVICES</p>
     <div className='flex justify-center  flex-wrap p-2'>
        {businessInternationalizationData.map((dt,i)=> (
-         <ServiceText dt={dt.descriptions} dth={dt.header}/>
+         <ServiceText dt={dt.descriptions} dth={dt.header} key={i}/>
        ))}
     </div>
     
