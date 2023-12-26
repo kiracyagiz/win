@@ -5,7 +5,7 @@ const Mission = () => {
   return (
     <div className="flex flex-col lg:h-screen  lg:flex-row lg:p-32">
       <div className="   gap-y-8 flex flex-col mx-auto  lg:flex-row gap-x-10  w-4/5 ">
-        <div className="bg-gray-300  h-full text-justify  lg:w-1/3 ">
+        <div className="bg-gray-300    text-justify  lg:w-1/3 ">
           <p className="text-4xl font-semibold text-center mt-2 ">MISSION</p>
           <p className="max-w-md p-4">
             Our mission is to facilitate worldwide business growth through
@@ -18,7 +18,7 @@ const Mission = () => {
             Albania and reach new heights on a global scale.
           </p>
         </div>
-        <div className="bg-gray-300 text-justify h-full lg:w-1/3">
+        <div className="bg-gray-300 text-justify   lg:w-1/3">
           <p className="text-4xl font-semibold text-center mt-2 ">VALUES</p>
           <p className="max-w-md p-4">
             As a company, our values are at the heart of everything we do. We
