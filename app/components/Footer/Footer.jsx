@@ -19,8 +19,10 @@ export const Footer = () => {
              <a href="#home">
              <Image src={'/logo2.png'} width={120} height={80} className="mr-1"/>
              </a>
-            <div className="flex flex-col lg:flex-row gap-x-20 text-md font-semibold gap-y-8">
-                <Link href="#home">HOME</Link>
+            <div className="flex list-none flex-col lg:flex-row gap-x-20 text-md font-semibold gap-y-8">
+                <Link href="#home">
+                    HOME
+                </Link>
                 <Link href="#about">ABOUT</Link>
                 <Link href="#services">SERVICES</Link>
                 <Link href="#team">TEAM</Link>

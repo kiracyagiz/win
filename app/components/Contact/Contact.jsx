@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { IoIosMail, IoMdPhonePortrait } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { useForm, ValidationError } from "@formspree/react";
 import toast, { Toaster } from 'react-hot-toast';
@@ -60,6 +59,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 className="border border-gray-300 p-2 rounded-md focus:outline-none focus:border-primaryColor"
+                required
             />
             <ValidationError prefix="Email" field="email" errors={state.errors} />
 
@@ -71,6 +71,7 @@ const Contact = () => {
                 type="Name"
                 name="name"
                 className="border border-gray-300 p-2 rounded-md focus:outline-none focus:border-primaryColor"
+                required
             />
 
             <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -83,6 +84,7 @@ const Contact = () => {
                 name="message"
                 className="border border-gray-300 p-2 rounded-md focus:outline-none focus:border-primaryColor"
                 rows="4"
+                required
             />
 
             <ValidationError

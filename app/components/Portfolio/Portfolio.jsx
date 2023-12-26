@@ -5,6 +5,16 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 const Portfolio = () => {
+    const imageData = [
+        '/London.jpeg',
+        '/milano.jpg',
+        '/paris.jpg',
+        '/Greece.jpg',
+        'jersusalem.jpg',
+        'poland.jpg',
+        'switzerland.jpg'
+        ]
+ 
   return (
     <div id="portfolio">
        <div className="hidden lg:block">
@@ -53,27 +63,13 @@ const Portfolio = () => {
        <p className=" text-2xl text-center font-semibold">PORTFOLIO</p>
         <p className=" text-xl mt-8 text-center font-semibold">COUNTRIES WE CONDUCT BUSINESS</p>
                <Carousel className='block md:hidden lg:hidden mx-auto text-center  p-10'>
-                <div className=' mx-auto'>
-                    <img src="/London.jpeg" height='100px' width='200px'/>
-                </div>
-                <div className=' mx-auto' >
-                    <img src="/milano.jpg" height='100px' width='200px'/>
-                </div>
-                <div className=' mx-auto'>
-                    <img src="/paris.jpg" height='100px' width='200px'/>
-                </div>
-                <div className=' mx-auto'>
-                    <img src="/Greece.jpg" height='100px' width='200px'/>
-                </div>
-                <div className=' mx-auto'>
-                    <img src="/jersusalem.jpg" height='100px' width='200px'/>
-                </div>
-                <div className=' mx-auto'>
-                    <img src="/poland.jpg" height='100px' width='200px'/>
-                </div>
-                <div className=' mx-auto'>
-                    <img src="/switzerland.jpg" height='100px' width='200px'/>
-                </div>
+                {imageData.map((dt,i)=> (
+                    <div className="mx-auto" key={i}>
+                        <img src={dt} alt="dt" height='100px' width='200px'/>
+                    </div>
+                ))}
+            
+        
         </Carousel>
        </div>
 
