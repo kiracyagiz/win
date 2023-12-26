@@ -11,10 +11,11 @@ const Contact = () => {
     
   const [state, handleSubmit] = useForm("moqgabyp");
   const formRef = useRef(null);
+  
   useEffect(() => {
     if (state.succeeded) {
       toast.success('You have successfully sent the message!');
-      formRef.current.reset(); // Reset the form values
+      formRef.current.reset(); 
 
     }
     if (state.errors) {
