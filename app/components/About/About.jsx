@@ -7,7 +7,7 @@ const About = () => {
     <div className="bg-primaryColor flex flex-col lg:flex-row justify-center lg:px-14 mt-10" id="about">
       <div className="w-4/5 mt-8 lg:mt-0 lg:w-1/2 flex flex-col justify-center gap-y-20 mx-auto">
         <p className=" text-5xl font-semibold">WHO WE ARE</p>
-        <p className="max-w-lg text-md">
+        <p className="text-justify max-w-lg text-md mb-2">
           WIN is an Albanian company with a primary focus on assisting Premium
           Businesses in growing their revenues worldwide. Our company
           specializes in providing comprehensive assistance to businesses
