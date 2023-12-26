@@ -31,7 +31,7 @@ const Contact = () => {
           <p className="text-2xl font-semibold">GET IN TOUCH</p>
           <p className="max-w-md text-justify ">
             Whether you have questions, want to explore partnerships, or simply
-            say hello, we're here.We're excited to hear from you and explore the
+            say hello, we are here.We are excited to hear from you and explore the
             endless possibilities together. Your journey with International
             begins here!
           </p>
