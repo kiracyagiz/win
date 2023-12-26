@@ -42,7 +42,7 @@ const Service = () => {
   return (
     <div className='service lg:h-screen mt-8 flex items-center justify-center' id='services'>
   <div className='flex flex-col items-center justify-center w-4/5  lg:h-4/5   bg-black m-4 bg-opacity-40'>
-    <p className='text-white text-2xl lg:text-8xl font-semibold pt-2'>OUR SERVICES</p>
+    <p className='text-white text-2xl lg:text-8xl font-semibold pt-2 mb-8'>OUR SERVICES</p>
     <div className='flex justify-center flex-wrap gap-x-8 gap-y-8 p-2 '>
        {businessInternationalizationData.map((dt,i)=> (
          <ServiceText dt={dt.descriptions} dth={dt.header} key={i}/>
