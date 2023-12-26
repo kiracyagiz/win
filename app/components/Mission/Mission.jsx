@@ -34,7 +34,7 @@ const Mission = () => {
         </div>
       </div>
       <div className="hidden lg:flex lg:flex-col  justify-center ">
-        <Image src={"/mission.jpg"} width={350} height={10} />
+        <Image src={"/mission.jpg"} width={350} height={10}  alt="mission"/>
       </div>
     </div>
   );

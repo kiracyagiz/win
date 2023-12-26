@@ -26,10 +26,10 @@ const About = () => {
 
       </div>
       <div className="hidden lg:relative lg:block">
-        <Image src="/whoFirst.jpg" width={500} height={500} />
+        <Image src="/whoFirst.jpg" width={500} height={500} alt="firstImage" />
 
         <div className="absolute bottom-0 right-0 -mb-12 -mr-8">
-          <Image src="/whoSecond.jpg" width={200} height={200} />
+          <Image src="/whoSecond.jpg" width={200} height={200} alt="secondImage" />
         </div>
       </div>
     </div>

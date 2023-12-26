@@ -6,7 +6,7 @@ const Team = () => {
     <div className="flex flex-col gap-x-14 lg:flex-row justify-center p-10" id="team">
       <div className="   gap-y-2 hidden lg:flex lg:flex-col">
         <p className=" text-2xl lg:text-7xl lg:max-w-xl  ">A MESSAGE FROM US</p>
-        <Image src={"/team.jpg"} width={500} height={500} />
+        <Image src={"/team.jpg"} width={500} height={500} alt="team" />
       </div>
       <div className=" flex flex-col justify-center gap-y-12 lg:gap-y-20">
         <p className="text-4xl text-center font-semibold">OUR TEAM</p>
