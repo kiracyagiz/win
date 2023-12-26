@@ -16,7 +16,7 @@ export const Footer = () => {
         <div className="px-4 pt-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  bg-black text-white">
           <div className="flex flex-col justify-between  text-center lg:flex-row mx-auto items-center pb-4">
              <a href="#home">
-             <Image src={'/international.png'} width={120} height={80} className="mr-1"/>
+             <Image src={'/logo.png'} width={120} height={80} className="mr-1"/>
              </a>
             <div className="flex flex-col lg:flex-row gap-x-20 text-md font-semibold gap-y-8">
                 <a href="#home">HOME</a>
