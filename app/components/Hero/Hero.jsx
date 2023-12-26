@@ -5,7 +5,7 @@ import TextPrimary from "../Text/TextPrimary";
 
 const Hero = () => {
   return (
-    <div className=' bg-primaryColor max-w-screen-2xl h-screen lg:h-[90vh]  flex  flex-col-reverse  lg:flex-row gap-y-5  items-center justify-center lg:justify-between m-auto " '>
+    <div className=' bg-primaryColor max-w-screen-2xl h-screen lg:h-[90vh]  flex  flex-col-reverse  lg:flex-row gap-y-5  items-center justify-center lg:justify-between m-auto " ' id="home">
       <div className=" lg:ml-36 flex flex-col gap-y-10  justify-center items-center lg:items-start   ">
         <p className=" w-4/5 text-2xl text-black font-semibold ">
           With a strong focus on international growth, we offer a wide range of
