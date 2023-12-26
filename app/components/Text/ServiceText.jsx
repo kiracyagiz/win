@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceText = ({dt,dth}) => {
   return (
-    <div className='text-white items-center gap-x-4 flex gap-y-8 p-8'>
+    <div className='text-white items-center  gap-x-4 flex gap-y-8 p-4'>
     <div class=" w-0.5  h-4/5   bg-white"></div>
 
         <div className=''>
