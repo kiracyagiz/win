@@ -25,10 +25,11 @@ const Contact = () => {
 
  
   return (
-        <div className=" p-12 gap-y-10 lg:p-32 flex flex-col lg:flex-row justify-between relative">
+        <div className=" p-12 gap-y-10 lg:p-32 flex flex-col lg:flex-row justify-between relative" id="contact">
             <Toaster
   position="top-right"
   reverseOrder={false}
+  
 />
         <div>
             

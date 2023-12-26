@@ -13,11 +13,11 @@ const Hero = () => {
         </p>
         <div className=" w-4/5 flex flex-col gap-y-8">
         <TextPrimary text={'Services tailored to meet the unique needs of each business'} font={'text-md lg:text-lg   '} fontStyle={'font-semibold '}/>
-        <ButtonPrimary text={"Contact Now ! "} locate={"#"} />
+        <ButtonPrimary text={"Contact Now ! "} locate={"#contact"}  />
 
         </div>
       </div>
-      <Image src={"/hero.svg"} width={600} height={600} />
+      <Image src={"/hero.svg"} width={600} height={600}  />
     </div>
   );
 };
