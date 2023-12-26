@@ -11,7 +11,7 @@ const Mission = () => {
             Our mission is to facilitate worldwide business growth through
             Albania by leveraging our extensive network and expertise. We
             provide comprehensive support to businesses looking to enter the
-            Albanian market or expand their operations worldwide. Win assists
+            Albanian market or expand their operations worldwide. International assists
             with navigating local regulations, establishing strategic
             partnerships and accessing valuable market insights. With our
             assistance, businesses can tap into the opportunities offered by

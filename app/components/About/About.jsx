@@ -8,7 +8,7 @@ const About = () => {
       <div className="w-4/5 mt-8 lg:mt-0 lg:w-1/2 flex flex-col justify-center gap-y-20 mx-auto">
         <p className=" text-5xl font-semibold">WHO WE ARE</p>
         <p className="text-justify max-w-lg text-md mb-2">
-          WIN is an Albanian company with a primary focus on assisting Premium
+          International is an Albanian company with a primary focus on assisting Premium
           Businesses in growing their revenues worldwide. Our company
           specializes in providing comprehensive assistance to businesses
           seeking to expand their global presence. With a strong focus on
