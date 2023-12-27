@@ -14,8 +14,8 @@ const Navbar = () => {
 
 <nav className=" border-gray-200 bg-black dark:bg-gray-900">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto p-2 ">
-    <a className="flex items-center justify-center  w-[16%] lg:w-fit  space-x-3 rtl:space-x-reverse " href='#home' >
-      <Image src={'/logo2.png'} width={130} height={10}/>
+    <a className="flex items-center justify-center  w-[16%] lg:w-fit p-2  space-x-3 rtl:space-x-reverse " href='#home' >
+      <Image src={'/logo3.png'} width={100} height={10}/>
     </a>
     <button type="button" onClick={openNavbar} className=" mr-2 inline-flex items-center p-1 mt-2  justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
     <MdOutlineMenu size={30} />
