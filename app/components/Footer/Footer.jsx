@@ -15,9 +15,9 @@ export const Footer = () => {
           />
         </svg>
         <div className="px-4 pt-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  bg-black text-white">
-          <div className="flex flex-col justify-between  text-center lg:flex-row mx-auto items-center pb-4">
+          <div className="flex flex-col justify-between  text-center lg:flex-row mx-auto items-center py-4">
              <a href="#home">
-             <Image src={'/logo3.png'} width={150} height={80} className="mr-1"/>
+             <Image src={'/logo3.png'} width={100} height={80} className="mr-1"/>
              </a>
             <div className="flex list-none flex-col lg:flex-row gap-x-20 text-md font-semibold gap-y-8">
                 <a href="#home">
